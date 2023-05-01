@@ -1,0 +1,359 @@
+
+body{
+
+    background-color: rgb(82, 143, 64);
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    background: url("/static/michalowa/images/background.jpg");
+
+
+
+}
+
+a{
+    color: black;
+    text-decoration: none
+}
+
+a:hover{
+    color: yellow;
+}
+
+footer {
+    margin: 7px;
+}
+
+.navbar{
+    margin: 4px;
+    background-color: rgb(194, 18, 18);
+    font-size: 35px;
+    min-height: 40px;
+    padding: 5px;
+
+}
+.location {
+    margin: 4px;
+    background-color: rgb(212, 111, 53);
+    font-size: 20px ;
+    padding: 3px;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+.michalowa_title{
+    background-color: #FCA875 ;
+    margin: 30px 230px 30px 230px ;
+    font-family: 'Brush Script MT', cursive;
+    font-style: oblique;
+
+    -webkit-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+
+
+}
+
+.michalowa_header{
+    padding: 30px;
+    color: white;
+    font-size: 85px;
+    min-height: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+.box_01{
+    background-color: #FCA875;
+    float: left;
+    min-height: 400px;
+    min-width: 320px;
+    margin: 0px 30px 0px 230px;
+    text-align: center;
+
+    -webkit-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+
+}
+.box_buttons {
+    padding: 10px;
+}
+
+.box_01_button {
+    margin: 20px;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    border: none;
+    min-width: 300px;
+    min-height: 60px;
+    font-style: oblique;
+
+    -webkit-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+}
+
+.box_01_button:hover{
+    background-color: rgb(199, 15, 64);
+}
+
+
+
+
+
+
+
+
+.box_02{
+    background-color: rgb(204, 217, 206);
+    min-height: 400px;
+    max-width: 400px;
+    min-width: 665px;
+    float: left;
+    font-family: Helvetica, sans-serif;
+
+    border: 10px solid rgb(255, 255, 255);
+
+    -webkit-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 0px 11px 0px rgba(66, 68, 90, 1);
+}
+
+
+
+
+
+.box_02_title{
+    margin: 5px;
+    min-width: 63%;
+    float: left;
+    font-size: 25px;
+}
+
+.box_02_author{
+    margin: 5px;
+    min-width: 33%;
+    float: left;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+.box_02_line{
+    clear: both;
+
+    background-color: rgb(196, 15, 63);
+    color: rgb(196, 15, 63);
+    margin: 80px 10px 20px 10px ;
+
+}
+
+.box_02_img{
+    float: left;
+    min-width: 20%;
+    background-color: #FCA875;
+    margin: 10px;
+    border: 5px solid white;
+}
+
+.box_02_content{
+    max-width: 73%;
+    float: left;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+.register_box{
+    background-color: brown;
+    margin-top: 200px;
+    margin-left: 650px;
+    max-width: 200px;
+    min-height: 200px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.section {
+    background-color: brown;
+}
+
+
+.main_post {
+    background-color: rgb(235, 20, 20);
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.main_post_title {
+    margin-left: 5px;
+    font-size: 25px;
+    color: black;
+}
+
+.main_post_body{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.main_post_footer{
+    text-align: right;
+    color: black;
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.post {
+    background-color: rgb(201, 98, 98);
+    margin: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid black;
+}
+.post_body{
+    margin-left: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+.post_footer {
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+
+.section_title{
+    background-color: rgb(144, 27, 9);
+    margin: 5px;
+    min-height: 40px;
+    font-size: 30px;
+    padding: 3px;
+}
+.section_subjects{
+    background-color: rgb(118, 80, 80);
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.subject{
+    background-color: rgb(164, 83, 83);
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    border: solid 1px black;
+    min-height: 28px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.section_title_s{
+    background-color: rgb(144, 27, 9);
+    margin: 5px;
+    min-height: 40px;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.section_subjects_s {
+    background-color: rgb(118, 80, 80);
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.subject_s{
+    background-color: rgb(164, 83, 83);
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    border: solid 1px black;
+    min-height: 28px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.toolbar {
+
+   
+    font-size: 20px ;
+    padding: 3px;
+    color: antiquewhite;
+  
+}
+
+.toolbar_button{
+    background-color: blueviolet;
+    font-size: 30px;
+}
+.toolbar_button:hover{
+    background-color: rgb(226, 183, 43);
+
+}
+
+.new_post_input {
+    width: 1500px;
+    height: 500px;
+    margin: 10px 10px 10px 20px;
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.new_post_form {
+    text-align: center;
+    font-size: 20px;
+}
+
+.new_post_form .toolbar_button {
+    font-size: 50px;
+    border: solid 3px black;
+}
+
+.input_title {
+    min-width: 900px;
+    font-size: 20px;
+}
+
+.like_button {
+    background-color: rgb(234, 234, 91);
+}
+.like_button:hover {
+    background-color: rgb(252, 252, 5);
+}
+
+.like_button_liked{
+    background-color: royalblue;
+}
+.like_button_liked:hover{
+    background-color: rgb(225, 65, 164);
+}
+
+.download_button {
+    background-color: rgb(166, 255, 0);
+    font-size: 10px;
+}
+
+.download_button:hover {
+    background-color: rgb(77, 210, 143);
+
+}
+
+.user {
+
+    color: #000000;
+    font-size: 20px;
+}

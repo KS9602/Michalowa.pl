@@ -1,0 +1,59 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'michalowa/css/style.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="michalowa_title" >
+            <div class="michalowa_header">www.michałowa.pl
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            
+            <div class="box_01">
+                <div class="box_buttons">
+                <button class="box_01_button"><b>GŁÓWNA</b></button> <br>
+                <button class="box_01_button" ><b>BLOG</b></button> <br>
+                <a href="{%url 'forum'%}"><button class="box_01_button"><b>FORUM</b></button></a> <br>
+                <button class="box_01_button"><b>KONTAKT</b></button> <br>
+            </div>
+            </div>
+
+
+
+
+
+            <div class="box_02">
+                <div class="box_02_title">{{subject.title}}</div>
+                <div class="box_02_author"> tekst <br> tekst <br>  tekst</div>
+                <div class="box_02_line">x</div>
+
+
+
+                <div class="box_02_img"><img src="{{subject.subject_pictrue.url}}"></div>
+                <div class="box_02_content">{{subject.subject_description}}</div>
+            </div>
+    
+        </div>
+    </main>
+
+    <footer >
+
+    </footer>
+
+</body>
+</html>
+
+
+

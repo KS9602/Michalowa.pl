@@ -1,0 +1,58 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'michalowa/css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="navbar">
+                <a href="{% url 'index' %}">Michałowa</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="user">Wyloguj</a>
+                {% else%}
+                <a href="{% url 'login' %}" class="user">Zaloguj</a>
+                <a href="{% url 'registration' %}"class="user">Rejestracja</a>
+                {%endif%}
+            </div>
+        </header>
+
+        <div class="location">
+            <a href="{% url 'forum' %}">HOME</a> >>
+            <a href="{% url 'section' section %}">{{section}}</a> 
+             >> Nowy Wpis
+        </div>
+
+    </header>
+
+    <main>
+        <div>
+    
+            <form class="new_post_form" method="post">
+                {%csrf_token%}
+
+                Tytuł: <input class="input_title" type="text" name="title">
+
+                <textarea class="new_post_input" cols="80" rows="10" id="textbox" type="text" name="textbox">Wpis... </textarea>
+
+                <button class="toolbar_button" type="submit" name="cancel" value="cancel">Anuluj</button>
+                <button class="toolbar_button" type="submit" name="enter" value="enter">Dododaj wpis</button>
+            </form>
+    
+        </div>
+    </main>
+
+    <footer >
+
+    </footer>
+
+</body>
+</html>
+
+
+

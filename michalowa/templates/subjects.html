@@ -1,0 +1,51 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'michalowa/css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="{% url 'index' %}">HOME</a>
+
+        </div>
+        <div class="location">
+            <a href="{% url 'forum' %}">HOME</a> >> {{subjects.0.subject_section.name}} 
+         </div>
+         <div class="toolbar">
+            <a href="{% url 'new_topic' subjects.0.subject_section.name %}"><button class="toolbar_button">Dododaj temat</button></a>
+
+        </div>
+    </header>
+
+    <main>
+            <div>
+
+            {% for subject in subjects%}
+            <div class="section_title_s" ><a href="{% url 'subject' subjects.0.subject_section.name subject.title %}">{{subject.title}}</a></div>
+
+            
+            <div class="section_subjects_s" >
+
+                <div class="subject_s" >{{subject.subject_description|slice:":300"}}</div>
+
+            </div>
+
+            <a href="{% url 'like' subject.id%}"><button class="like_button">LIKE</button></a> {{subject.likes.all.values_list|length}}
+
+            {%endfor%}
+
+            </div>
+    </main>
+
+    <footer style="margin: 7px;">
+
+    </footer>
+
+</body>
+</html>
