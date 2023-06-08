@@ -16,7 +16,7 @@ from .views import (
 
 urlpatterns = [
     path("registration/", new_user, name="registration"),
-    path("login/", login_user, name="login_user"),
+    path("login/", login_user, name="login"),
     path("logout/", logout_user, name="logout"),
     path("init_app/", init_app),
     path("", index, name="index"),

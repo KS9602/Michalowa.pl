@@ -12,6 +12,7 @@ from decouple import config
 from .models import ForumUser, Section, Subject, Post
 from .forms import NewUserForm, LoginForm
 from .decorators import login_required
+from .constants import SECTIONS
 
 
 def init_app(request):
@@ -27,14 +28,6 @@ def init_app(request):
     names = requests.get("https://names.drycodes.com/10").json()
     emails = [i + "@gmail.com" for i in names]
     passwrod = config("USER_PASSWORD")
-    SECTIONS = {
-        1: "Potrawy",
-        2: "Porzadki",
-        3: "Ogrod",
-        4: "Firanki",
-        5: "Pogaduch",
-        6: "Smietnik",
-    }
 
     for i, j, k in zip(names, emails, passwrod):
         user = User.objects.create_user(username=i, email=j, password=k)
@@ -112,7 +105,7 @@ def login_user(request):
 
         else:
             messages.error(request, "Błędne dane")
-            return redirect("login_user")
+            return redirect("login")
 
     context = {"form": form}
     return render(request, "login_user.html", context=context)
